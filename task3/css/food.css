@@ -1,0 +1,68 @@
+body{
+    background-image: url(/img/pexels-rahul-pandit-2086748.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height:200vh;
+    width: 100vw;
+}
+.title{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(127, 255, 212, 0.186);
+    box-shadow: 0px 0px 10px black;
+    margin-top: 30px;
+}
+.title{
+    animation-name: title;
+    animation-direction: initial;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+@keyframes title{
+    0%{
+        text-shadow: 0px 0px 10px yellow;
+    }
+    30%{
+        text-shadow: 0px 0px 10px rgb(111, 255, 0);
+    }
+    50%{
+        text-shadow: 0px 0px 10px rgb(0, 255, 149);
+    }
+    100%{
+        text-shadow: 0px 0px 10px rgb(255, 0, 230);
+    }
+}
+.main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin-top: 30px;
+}
+img{
+    width: 200px;
+    height: 200px;
+    border-radius: 20px;
+}
+.c1{
+    height: 300px;
+    width: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: rgba(155, 152, 152, 0.781);
+    border-radius: 20px;
+    border-bottom: 10px solid rgba(255, 165, 47, 0.579);
+}
+.c1:hover{
+    background-color: antiquewhite;
+    transform: scale(1.1);
+}
+h2{
+    background-color: rgba(255, 255, 0, 0.567);
+    border-radius: 5px;
+    padding: 2px;
+}

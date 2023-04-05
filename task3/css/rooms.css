@@ -1,0 +1,108 @@
+body{
+    background-image: url(/img/pexels-rahul-pandit-2086748.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height:200vh;
+    width: 100vw;
+}
+.content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+.main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+}
+.title{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(127, 255, 212, 0.186);
+    box-shadow: 0px 0px 10px black;
+    margin-top: 30px;
+}
+.title{
+    animation-name: title;
+    animation-direction: initial;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+@keyframes title{
+    0%{
+        text-shadow: 0px 0px 10px yellow;
+    }
+    30%{
+        text-shadow: 0px 0px 10px rgb(111, 255, 0);
+    }
+    50%{
+        text-shadow: 0px 0px 10px rgb(0, 255, 149);
+    }
+    100%{
+        text-shadow: 0px 0px 10px rgb(255, 0, 230);
+    }
+}
+
+.c1{
+    height: 300px;
+    width: 300px;
+    background-color: rgba(155, 152, 152, 0.781);
+    border-bottom: 10px solid rgba(255, 165, 47, 0.579);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+}
+.c2{
+    height: 300px;
+    width: 300px;
+    background-color: rgba(155, 152, 152, 0.781);
+    border-bottom: 10px solid rgba(255, 165, 47, 0.579);
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.c3{
+    height: 300px;
+    width: 300px;
+    background-color: rgba(155, 152, 152, 0.781);
+    border-bottom: 10px solid rgba(255, 165, 47, 0.579);
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+img{
+    margin-top: -50px;
+    border-radius: 20px;
+    height: 200px;
+    width: 200px;
+}
+.star{
+    background-color: rgba(255, 255, 0, 0.59);
+    border-radius: 10px;
+    padding: 2px;
+}
+.c1:hover{
+    /* background-color: rgba(246, 246, 245, 0.713); */
+    box-shadow: 0px 0px 10px rgb(253, 253, 251);
+    transform: scale(1.1);
+}
+.c2:hover{
+    /* background-color: rgba(246, 246, 245, 0.713); */
+    box-shadow: 0px 0px 10px rgb(253, 253, 251);
+    transform: scale(1.1);
+}
+.c3:hover{
+    /* background-color: rgba(246, 246, 245, 0.713); */
+    box-shadow: 0px 0px 10px rgb(253, 253, 251);
+    transform: scale(1.1);
+}

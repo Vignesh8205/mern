@@ -1,0 +1,112 @@
+
+/* head section */
+body{
+    background-image: url(/img/pexels-rahul-pandit-2086748.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height:100vh;
+    width: 100vw;
+} 
+
+/* content section */
+.title{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(127, 255, 212, 0.186);
+    box-shadow: 0px 0px 10px black;
+    margin-top: 30px;
+}
+.title{
+    animation-name: title;
+    animation-direction: initial;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+@keyframes title{
+    0%{
+        text-shadow: 0px 0px 10px yellow;
+    }
+    30%{
+        text-shadow: 0px 0px 10px rgb(111, 255, 0);
+    }
+    50%{
+        text-shadow: 0px 0px 10px rgb(0, 255, 149);
+    }
+    100%{
+        text-shadow: 0px 0px 10px rgb(255, 0, 230);
+    }
+}
+
+.main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+.img{
+    width: 300px;
+    height: 400px;
+    border-radius: 20px;
+    border-bottom: rgba(124, 245, 69, 0.381) solid 10px;
+    margin-top: -30px;
+
+}
+.img:hover{
+    transform: scale(1.1);
+}
+.content{
+    margin-top: 60px;
+    margin-bottom: 100px;
+    height: 400px;
+    width: 430px;
+    border-radius: 20px;
+    background-color: rgba(232, 230, 230, 0.441);  
+    border-bottom: rgba(124, 245, 69, 0.381) solid 10px;
+}
+.v1{
+    margin-top: 50px;
+    height: 50px;
+    color: rgba(36, 43, 26, 0.363);
+    box-shadow: 0px 0px 10px whitesmoke;
+    border-radius: 10px;
+    padding: 5px;
+}
+.content1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 30px;
+    margin-top: -30px;
+}
+.v1{
+    animation-name: v1;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+@keyframes v1{
+    0%{
+       text-shadow: 0px 0px 10px blue;
+    }
+    30%{
+      text-shadow: 0px 0px 10px  rgb(43, 177, 226);
+    }
+    50%{
+        text-shadow: 0px 0px 10px  rgb(43, 226, 104);
+    }
+    70%{
+        text-shadow: 0px 0px 10px  rgb(43, 226, 214);
+    }
+   100%{
+    text-shadow: 0px 0px 10px  rgb(171, 226, 43);
+    }
+}
+.img1{
+    height: 250px;
+    width: 300px;
+    border-radius: 20px;
+}
+
+

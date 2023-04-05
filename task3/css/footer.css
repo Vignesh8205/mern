@@ -1,0 +1,25 @@
+.footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+}
+i{
+    font-size: 20px;
+}
+.i1{
+    color: rgb(242, 36, 101);
+    font-size: 30px;
+}
+.i2{
+    color: rgb(13, 81, 158);
+    font-size: 30px;
+}
+.i3{
+    color: rgb(46, 235, 225);
+    font-size: 30px;
+}
+.i4{
+    color: rgb(36, 243, 36);
+    font-size: 30px;
+}

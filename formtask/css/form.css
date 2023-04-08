@@ -1,0 +1,141 @@
+body{
+    background-image: url(/Html/formtask/assets/waterdrop-ga30977114_1280.jpg);
+    /* background: linear-gradient(white blueviolet red);  */
+}
+.whole{
+    height: 500px;
+    width: 500px;
+    background-image: url(/css/assets/—Pngtree—minimal\ geometric\ podium\ scene\ with_1203883.jpg);
+    margin-left: 300px;
+    margin-top: 100px;
+    border-radius: 36px;
+    border: 2px solid black;
+    box-shadow: 0px 0px 30px white; 
+    color: aliceblue;
+    opacity: 0.6;   
+}
+.whole:hover{
+    transform: scale(1.1);
+    opacity: 0.9;
+}
+.child1{
+    padding: 50px;
+    margin-top: -40px;
+}
+.child2{
+    padding: 50px;
+    margin-top: -130px;
+}
+.select1{
+    margin-left: 130px;
+    margin-top: -39px;
+}
+.select3{
+    margin-left: 130px;
+    margin-top: -39px;
+}
+.select2{
+    margin-left: 130px;
+    margin-top: -39px;
+}
+.select4{
+    margin-left: 130px;
+    margin-top: -15px;
+}
+.sk{
+    margin-top: -3px;
+}
+.dis{
+    margin-top: -30px;
+}
+.st{
+    margin-top: -30px;
+}
+.co{
+    margin-top: -25px;
+}
+.i1{
+    margin-left: 23px;
+}
+.i3{
+    margin-left: 66px;
+}
+.i4{
+    margin-left: 49px;
+}
+.skill{
+    margin-left: 40px;
+    margin-top: -10px;
+}
+.f1{
+    margin-left: 79px;
+    border-radius: 8px;  
+}
+.f1:hover{
+    box-shadow: 0px 0px 10px white; 
+    transform: scale(1.2);
+}
+.f2{
+    margin-left: 23px;
+    margin-top: 5px;
+    border-radius: 8px;
+}
+.f2:hover{
+    box-shadow: 0px 0px 10px white; 
+    transform: scale(1.2);
+}
+.f3{
+    margin-left: 21px;
+    margin-top: 5px;
+    border-radius: 8px;
+}
+.f3:hover{
+    box-shadow: 0px 0px 10px white; 
+    transform: scale(1.2);
+}
+.f4{
+    margin-left: 63px;
+    margin-top: 5px;
+    border-radius: 8px;
+}
+.f4:hover{
+    box-shadow: 0px 0px 10px white; 
+    transform: scale(1.2);
+}
+.f5{
+    margin-left: 125px;
+    border-radius: 8px;
+    margin-top: -40px;  
+}
+.f5:hover{
+    box-shadow: 0px 0px 10px white; 
+    transform: scale(1.2);
+}
+.f6{
+    margin-top: 5px;
+    margin-left: 73px;
+    border-radius: 8px;  
+}
+.f6:hover{
+    box-shadow: 0px 0px 10px white; 
+    transform: scale(1.2);
+}
+
+button{
+    margin-left: 350px;
+    margin-top: -60px;
+    border-radius: 8px;
+    background-color: aquamarine;
+    height: 30px;
+    width: 60px;
+}
+button:hover{
+    box-shadow: 0px 0px 10px white; 
+    transform: scale(1.2);
+}
+option{
+    background-color: blueviolet;
+}
+.sub{
+    padding: 30px;
+}

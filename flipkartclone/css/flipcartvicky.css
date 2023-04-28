@@ -1,0 +1,164 @@
+body{
+    background-color: rgb(9, 112, 112);
+}
+*{
+    margin: 0px;
+    padding: 0px;
+}
+/* navbar */
+.navss{
+    background-color: blue;
+    position: sticky;
+    top: 0px;
+    z-index: 1;
+}
+
+.navmain{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    height: 80px;
+    /* height: 70px; */
+}
+.nav2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; 
+}
+.list{
+    display: flex;
+    color: aliceblue;
+    font-weight: 400;
+    gap: 30px;
+    font-size: 20px;
+}
+li{
+    list-style: none;
+}
+input{
+    width: 300px;
+    height: 40px;
+    border: none;
+    border-radius: 2px;
+    /* position: absolute; */
+}
+.i1{
+
+    position: relative;
+}
+input::placeholder{
+padding: 10px;
+}
+.log{
+    height: 35px;
+    width: 100px;
+    border: none;
+    background-color: white;
+    color: blue;
+    border-radius: 2px;
+}
+/* headbar */
+.headbar1{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+   
+}
+.second{
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+}
+/* card */
+.bgele{
+    
+}
+.cars{
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+
+}
+.c1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; 
+    height: 300px;
+    background-color: aliceblue;
+}
+.row1{
+    box-shadow: 0px 0px 10px rgb(174, 172, 172);
+}
+.car{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; 
+    height: 400px; 
+    width: 250px;
+}
+.carimg{
+    /* height: 150px; */
+}
+.carimg:hover{
+    transform: scale(1.1);
+}
+/* second card */
+.carimgdiv{
+    height: 200px;
+    width: 200px;
+}
+.subcontent h4{
+font-size: 15px;
+}
+.subcontent p{
+    font-size: 13px;
+    }
+    /* footer */
+ .footercontent{
+    display: flex;
+    justify-content: space-evenly;
+ }
+ footer{
+    background-color: rgb(29, 29, 71);
+   
+ }
+
+ .foottext h5{
+color: rgb(129, 123, 123);
+font-size: 15px;
+ }
+ .foottext p{
+    color: rgb(250, 249, 249);
+    font-size: 13px;
+ }
+ .fcs{
+    display: flex;
+    color: antiquewhite;
+    justify-content: space-evenly;
+ }
+ .fdf{
+    display: flex;
+    color: antiquewhite;
+    justify-content: space-evenly;
+ }
+ .lastfoot{
+    border-left: 1px solid aliceblue;
+
+ }
+ /* icon */
+ .i2{
+    color: yellow;
+    font-size: 20px;
+ }
+ /* nav */
+ @media(max-width:600px){
+    .navss{
+        height: 150px;
+    }
+ }

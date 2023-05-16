@@ -1,0 +1,106 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>find prime number</title>
+</head>
+<body>
+    <div class="body">
+        <div class="form">
+        <h1>Find Prime number</h1>
+    <label for="">Enter a value</label><br>
+    <input type="number" id="val" class="in"><br>
+    <input type="submit"   onclick="hi()" class="sub">
+</div>
+<p id="result" class="p"></p>
+<p id="result2" class="p2"></p>
+    </div>
+
+    <style>
+        body{
+            margin: 0px;
+            padding: 0px;
+        }
+       .body{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background-color: rgb(94, 92, 92);
+        height: 500px;
+       }
+       .form{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background-color: rgb(176, 238, 238);
+        padding: 20px;
+        border-radius: 10px;
+        border-bottom: 10px solid rgba(253, 139, 90, 0.69);
+       }
+       .sub{
+        background-color: rgba(255, 187, 0, 0.594);
+        padding: 10px;
+        border-radius: 5px;
+        border:none ;
+       
+       }
+       .sub:hover{
+        box-shadow: 0px 0px 10px black;
+        transform: scale(1.05);
+       }
+       .in{
+        outline: none;
+        border: none;
+        height: 25px;
+        background: none;
+        border-bottom: 1px solid black;
+
+       }
+       input::-webkit-outer-spin-button,
+        input::-webkit-inner-spin-button {
+                  -webkit-appearance: none;
+                                margin: 0;
+                             }
+
+       .p{
+        color: rgb(237, 244, 247);
+        font-size: 30px;
+        font-weight: bold;
+       }
+       .p2{
+        color: rgb(247, 133, 108);
+        font-size: 30px;
+        font-weight: bold;
+       }
+    </style>
+    
+    <script>
+        function hi() {
+           var num1=document.getElementById("val").value
+           var temp=true
+           if (num1>1) {
+            for (i=2;i<num1;i++){
+
+           if (num1%i==0) {
+           temp=false
+           break
+           }
+           }
+           console.log(temp);
+           if (temp) {
+            console.log('prime');
+            document.getElementById("result").innerHTML="prime number"
+           }else{
+            console.log('not prime number');
+            document.getElementById("result2").innerHTML="Not a prime number"
+           } 
+        } 
+    
+    }
+    
+    </script>
+</body>
+</html>

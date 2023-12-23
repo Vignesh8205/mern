@@ -1,0 +1,365 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function squareDigits(num){
+
+a=String(num).split("").map(Number)
+r=""
+for(i=0;i<a.length;i++){
+r=r+a[i]**2
+}
+return Number(r)
+     }
+     squareDigits(3212)
+    </script>
+    <script>
+        // polidrome 
+//  function isPalindrome(x) {
+//  if(){
+// return true
+//  }
+  
+  
+// }
+// console.log(isPalindrome('Aba'));
+String.prototype.isUpperCase = function(str) {
+    a= str.split(" ").join("")
+    return a==a.toUpperCase()
+    
+    
+
+
+
+ 
+}
+console.log(String.prototype.isUpperCase("HELLO I AM DONALD"));
+a=55
+console.log(typeof(a)=="string");
+    </script>
+    <script>
+        // find multiples
+ function findMultiples(integer, limit) {
+         r=[]
+        e= limit/integer
+        te=0
+        for(i=0;i<Math.floor(e);i++){
+           r.push( te=te+integer)
+
+        }
+        return r
+
+     
+
+}
+console.log(findMultiples(4, 27));
+    </script>
+    <script>
+        // getmidle character
+        function getMiddle(s)
+{
+    div=Math.floor( s.length/2)
+   div1=s.length/2
+     
+      if (div1==div) {
+         return [s[div-1],s[div]].join("")
+      } else {
+        return s[div] 
+      }
+
+}
+console.log(getMiddle("abcd"));
+console.log([]==0);
+
+
+    </script>
+    <!-- array sort length in string -->
+    <script>
+ function sortByLength (array) {
+       so=[]     
+       res=[]
+for(i=0;i<array.length;i++){
+so.push(array[i].length)
+}
+ar=so.sort(function(a,b){return a-b})
+for(j=0;j<ar.length;j++){
+   for(k=0;k<ar.length;k++){
+    if (ar[j]==array[k].length) {
+
+        res.push(array[k])
+
+    }
+} 
+}
+return res
+}
+console.log(sortByLength(["Begiiiiiii", "Life", "I", "To"]));
+    </script>
+
+    <script>
+        // love fun 
+function lovefunc(flower1, flower2){
+ if(flower1==flower2){
+   return false
+ }else if(flower1%2==0&flower2%2==0){
+   return false
+ }else if(flower1%2==1& flower2%2==1){
+    return false
+ }else{
+   return true
+ }
+}
+console.log(lovefunc(29,30));
+console.log();
+// console.log(String.fromCodePoint(5));
+s=null
+// console.log(charCodeAt(s));
+console.log(0**2);
+    </script>
+<script>
+    // simple fun 
+    function reverseLetter(str) {
+  res=''
+  for(i=str.length-1;i>=0;i--){
+    ch=str.charCodeAt(i)
+    if (ch>=32&64>=ch || ch>=91&ch<=96 || ch>=123&ch<=127) {
+        
+    } else {
+      res=res+str[i]  
+    }
+  
+  }
+  return res
+  
+}
+console.log(reverseLetter("kri  sh(21 {\>[]an"));
+// remove string
+function remove (string) {
+  //coding and coding....
+   res=''
+   if(string[string.length-1]=="!"){
+     for(i=0;i<string.length-1;i++){
+       res=res+string[i]
+     }
+     return res
+   }else{
+     return string
+   }
+   
+ 
+}
+console.log(remove("hii!!!"));
+</script>
+<script>
+    // pin validation
+    function validatePIN (pin) {
+  if(pin.length==4|| pin.length==6){
+    c=0;
+    for(i=0;i<pin.length;i++){
+       ch=pin.charCodeAt(i)
+      if(ch>=48& ch<=57){
+        c++
+      } 
+      
+    }
+    if(pin.length==c){
+      return true
+    }else{
+      return false
+    }
+  }else{
+    return false
+  }
+}
+console.log(validatePIN("11e1"));
+
+// logics or operator 
+function xor(a, b) {
+ return a||b
+}
+console.log(xor(false,true));
+console.log(150%100);
+
+
+
+</script>
+<!-- array duplicate elements -->
+<script>
+    
+
+let arr = [1,1,1,3,5,6,6,6,7,7]; 
+  
+function removeDuplicates(arr) { 
+    console.log(...new Set(arr));
+    return [...new Set(arr)]; 
+    
+} 
+  
+console.log(removeDuplicates(arr));
+</script>
+<script>
+    // hex to decimal
+    a="FF"
+   console.log(parseInt(a,16));
+   fruits = [1,2,3,5,6];
+   console.log(fruits.pop());
+   a="helllo"
+   console.log(a.replace());
+   s = "est abc test test abc test test test abc test test abc";
+   s = s.replace(s[0], s[0].toUpperCase());
+
+   console.log(s);
+
+
+</script>
+<script>
+    a='hello'
+    res=''
+    for(i=0;i<a.length;i++){
+        res+=a[i]
+        for(j=i;j<=i;j++){
+            res+=a[j]
+        }
+
+    }
+console.log(res);
+</script>
+<script>
+    n=42145
+    console.log(n.toString().split("").map(Number).sort((a,b)=>{return a-b}).reverse());
+</script>
+<script>
+    function sumOfMinimums(arr) {
+  c=0
+  for(i=0;i<arr.length;i++){
+    c=c+Math.min(...arr[i])
+  }
+  return c
+}
+console.log(sumOfMinimums([[11, 12, 14, 54], [67, 89, 90, 56], [7, 9, 4, 3], [9, 8, 6, 7]]));
+</script>
+<script>
+
+function minValue(values){
+    re=[...new Set(values)].sort((a,b)=>{return a-b}).join("")
+    return Number(re)
+  
+}
+console.log(minValue([4, 7, 5, 7]));
+</script>
+
+<script>
+  function countBy(x, n) {
+  let z = []
+  c=0
+  for(i=0;i<n;i++){
+    c=c+x
+    z.push(c)
+
+  }
+
+  return z;
+}
+console.log(countBy(2,5));
+</script>
+<script>
+  function addLength(str) {
+    ar=str.split(" ")
+    l=[]
+    for(i=0;i<ar.length;i++){
+      l.push(ar[i]+" "+ar[i].length)
+
+    }
+    
+    return l
+
+}
+console.log(addLength('apple ban'));
+console.log();
+</script>
+<script>
+  // bin to decimal
+  function binToDec(bin) {
+    sum=0
+    temp=[]
+for(i=0;i<bin.length;i++){
+  temp.push(i)
+}
+a=temp.reverse()
+for(j=0;j<bin.length;j++){
+ num=Number(bin[j])*2**a[j]
+ sum=sum+num
+}
+return sum
+}
+console.log(binToDec("10"));
+console.log("hdhd");
+</script>
+ <script>
+            function multiTable(number) {
+                res=""
+                 for(i=1;i<=10;i++){
+                    multi=i*number
+                    res=res+ i+"*"+number+"="+multi+"\n"
+                 }
+                  return res
+            }
+console.log(multiTable(5));
+        </script>
+<script>
+  // remove smallest element
+  function removeSmallest(numbers) {
+  or=[]
+  res=[]
+  for(i=0;i<numbers.length;i++){
+    or.push(numbers[i])
+  }
+ a=or.sort((a,b)=>{return a-b})
+  console.log(numbers);
+  console.log(a);
+  for(i=0;i<numbers.length;i++){
+if (numbers[i]==a[0]) {
+  
+} else {
+  res.push(numbers[i])
+}
+  }
+  return res
+}
+console.log(removeSmallest([2, 2, 1, 2, 1]));
+</script>
+<script>
+  function hello(name) {
+ if(name==""){
+   return "Hello, World!"
+ }else{
+  a=name.toLowerCase()
+  console.log(a);
+ b=a.replace(a[0],a[0].toUpperCase())
+   return "Hello, "+b+"!"
+ }
+}
+console.log(hello("aguAna"));
+
+</script>
+<script>
+  // letter position value
+  function position(letter){
+var ar=["a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r","s","t","u","v","w","x","y","z"]
+
+var c=1;
+for(i=0;i<27;i++){
+if (ar[i]==letter) {
+  c+=i
+}
+}
+return c
+}
+console.log(position(""));
+</script>
+</body>
+</html>

@@ -1,0 +1,145 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=
+    , initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        a=1201
+        
+        console.log(a%10);
+        console.log(Math.floor(a/10));
+function toBinary(n){
+    res=''
+for(i=n;i>0;i--){
+    res=res+Math.floor(n%2)  
+n=n/2
+ 
+}
+return res
+
+}
+console.log(toBinary(2));
+
+    </script>
+    <script>
+function replace(s){
+  res=""
+  for(i=0;i<s.length;i++){
+    if (s[i]=="a"||s[i]=="e"||s[i]=="i"||s[i]=="o"||s[i]=="u"||s[i]=="A"||s[i]=="E"||s[i]=="I"||s[i]=="O"||s[i]=="U") {
+        res=res+"!"
+    } else {
+        res=res+s[i]
+    }
+
+  }
+  return res
+}
+console.log(replace("hii"));
+
+    </script>
+    <script>
+function capitalize(s){
+    res1=""
+    for(i=0;i<s.length;i++){
+        if (i%2==0) {
+            res1+=s[i].toUpperCase();
+        }else{
+            res1+=s[i]
+        }
+
+    }
+    res2=""
+    for(j=0;j<s.length;j++){
+        if (j%2==0) {
+            res2+=s[j]
+        }else{
+            res2+=s[j].toUpperCase();
+        }
+
+    }
+return [res1,res2]
+    
+}
+console.log(capitalize("abcdefghi"));
+    </script>
+    <script>
+ function removeUrlAnchor(url){
+ a= url.split("#")
+ return a[0]
+}
+console.log(removeUrlAnchor('www.codewars.com#about'));
+    </script>
+    <script>
+        function factorial(n)
+{
+  c=1  
+  temp=0
+ for(i=1;i<=n;i++){
+c=c+(c*i)
+ }
+ return c
+}
+console.log(factorial(6));
+
+
+// factorial
+function sumFactorial(arr){
+    sum=0
+  for(j=0;j<arr.length;j++){
+  sum=sum+factorial(arr[j])
+  }
+  return sum
+}
+console.log(sumFactorial([4,6]));
+
+
+
+
+function factorial(n)
+{
+    c=1
+  for(i=1;i<=n;i++){
+    c=c*i
+     
+  }
+  return c
+}
+console.log(factorial(4));
+
+
+function sumDigits(number) {
+  res=String(number).split("")
+  c=0
+  for(i=0;i<res.length;i++){
+    if (/[0-9]/.test(res[i])) {
+        c=c+Number(res[i])
+        
+    }
+
+  }
+  return c
+}
+console.log(sumDigits(99));
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+</body>
+</html>

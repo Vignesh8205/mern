@@ -1,0 +1,36 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let ar=[1,3,1,2,3,5,7,7]
+        double=[]
+        single=[]
+        c=0
+        for(i=0;i<ar.length;i++){
+            for(j=0;j<ar.length;j++){
+        if (ar[i]==ar[j+i+1]) {
+            double.push(ar[i])
+        }else{
+            
+        }
+    }
+   }
+   for(k=0;k<double.length;k++){
+            for(l=0;l<ar.length;l++){
+        if (double[k]==ar[l]) {
+            // double.push(ar[i])
+        }else{
+            single.push(ar[l])
+        }
+    }
+   }
+        console.log(double);
+        console.log(single);
+        console.log(c);
+    </script>
+</body>
+</html>
